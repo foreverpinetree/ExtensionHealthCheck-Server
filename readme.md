@@ -14,10 +14,12 @@
 
 - 使用现有 `npm start` / `npm run dev` 启动，监听成功后立即巡检，此后每 3 小时重新读取 `urls` 目录。一个进程内不会重叠巡检；生产环境请只运行一个监控实例，避免多个进程重复探测、同时写文件。
 - `urls/data.json` 和 `urls/additional_data.json` 均使用 `{ "urls": [{ "name": "...", "host": "https://example.com", "category": "2026" }] }`。前者的 `type` 为 `normal`，后者为 `additional`。同一个规范化 URL 只检测一次，additional 覆盖 normal。
-- `urls/ignore_urls.json` 使用 `{ "data": ["https://example.com"] }`，在合并后排除。匹配完整 URL，自动规范化域名大小写、默认端口和根路径斜杠、忽略锚点；不同路径或查询参数仍是不同 URL。
+- `urls/ignore_urls.json` 和 `urls/pending_urls.json` 均使用 `{ "data": ["https://example.com"] }`，合并为排除列表，在 normal 与 additional 合并后过滤。ignore 用于长期忽略，pending 用于正在开发的项目；项目完成后手动删除 pending 中的条目即可恢复监控。
+- 排除匹配会规范化域名大小写、默认端口，忽略锚点和路径末尾的 `/`；例如 `https://example.com/path` 与 `https://example.com/path/` 在两个排除列表中视为相同地址。不同路径、不同查询参数仍分别匹配，查询参数值末尾的 `/` 不会被删除；实际访问的 URL 不会为此改写路径。
+- 四个 URL 配置文件均须存在（空的排除列表写为 `{ "data": [] }`）。修改 pending 或 ignore 后，网页/接口下一次读取状态就会排除对应项目；移除排除条目后恢复显示，下一轮自动巡检开始访问，重启服务也会立即巡检。
 - 按顺序发送 GET 请求，后续请求（包含重试）在前一次结束后等待 2 秒。单次请求最多 15 秒，最多跟随 5 次重定向；最终响应非 2xx、网络错误、超时均算失败。失败后重试一次，两次都失败才标为 `error`。
 - HTTP(S) 请求使用单个 options 对象，兼容旧式 `get(options, listener)` 参数约定，避免把请求头对象误当成回调函数。
-- 每轮结束将结果原子写入 `urls/result.json`，重启可恢复上次结果；不修改三个配置文件。配置和结果写入错误会明确记录日志并显示监控异常。
+- 每轮结束将结果原子写入 `urls/result.json`，重启可恢复上次结果；不修改四个配置文件。配置和结果写入错误会明确记录日志并显示监控异常。
 - `GET /api/status` 返回当前有效 URL、逐项结果和汇总：`state`（`healthy` / `error` / `unknown`）、`hasErrors`、`errorCount`、`healthyCount`、`pendingCount`、`checking`、巡检时间等。配置或巡检系统异常返回 HTTP 503 和同样的 JSON 结构；URL 检测失败本身仍返回 HTTP 200。
 - `GET /` 首页直接显示无需登录的状态页面，每 30 秒自动更新，可按名称、URL、分类、类型和状态筛选。不提供手动刷新状态按钮，也没有手动触发巡检的接口；读取状态不会触发额外巡检。原 `/status` 页面已移除，访问返回 404。配置变化会立即反映在列表中，新 URL 在下一次巡检前显示等待检测。
 - 首次巡检未完成、存在待检测项、结果超过 6 小时未更新，或配置/监控异常时整体状态为 `unknown`，不会误报正常。部署时如不希望公开这些 URL，请在反向代理限制状态页面和接口的访问，并允许插件所在设备访问。

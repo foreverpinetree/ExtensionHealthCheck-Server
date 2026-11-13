@@ -17,6 +17,12 @@ function normalizeUrl(value) {
   return url.href;
 }
 
+function exclusionKey(value) {
+  const url = new URL(normalizeUrl(value));
+  url.pathname = url.pathname.replace(/\/+$/, '') || '/';
+  return url.href;
+}
+
 async function loadUrls(directory) {
   async function readList(filename, key) {
     const data = JSON.parse(await fs.readFile(path.join(directory, filename), 'utf8'));
@@ -28,7 +34,9 @@ async function loadUrls(directory) {
 
   const normal = await readList('data.json', 'urls');
   const additional = await readList('additional_data.json', 'urls');
-  const ignored = new Set((await readList('ignore_urls.json', 'data')).map(normalizeUrl));
+  const ignore = await readList('ignore_urls.json', 'data');
+  const pending = await readList('pending_urls.json', 'data');
+  const ignored = new Set([...ignore, ...pending].map(exclusionKey));
   const urls = new Map();
   for (const [type, entries] of [['normal', normal], ['additional', additional]]) {
     for (const entry of entries) {
@@ -37,7 +45,7 @@ async function loadUrls(directory) {
         throw new Error('Invalid URL entry in ' + type + ' data');
       }
       const host = normalizeUrl(entry.host);
-      if (!ignored.has(host)) {
+      if (!ignored.has(exclusionKey(host))) {
         urls.set(host, { name: entry.name, host, category: entry.category, type });
       }
     }

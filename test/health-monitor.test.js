@@ -22,6 +22,7 @@ async function fixture(fn) {
   await write('data.json', { urls: [entry('https://one.example'), entry('https://two.example')] });
   await write('additional_data.json', { urls: [] });
   await write('ignore_urls.json', { data: [] });
+  await write('pending_urls.json', { data: [] });
   try {
     await fn(directory, write);
   } finally {
@@ -59,6 +60,71 @@ test('invalid input and missing files are reported, not silently ignored', () =>
   await assert.rejects(loadUrls(directory), /array named "data"/);
   await fs.unlink(path.join(directory, 'ignore_urls.json'));
   await assert.rejects(loadUrls(directory), /ENOENT/);
+  await write('ignore_urls.json', { data: [] });
+  await write('pending_urls.json', { urls: [] });
+  await assert.rejects(loadUrls(directory), /pending_urls\.json.*array named "data"/);
+  await write('pending_urls.json', { data: ['file:///invalid'] });
+  await assert.rejects(loadUrls(directory), /HTTP/);
+  await fs.unlink(path.join(directory, 'pending_urls.json'));
+  await assert.rejects(loadUrls(directory), /ENOENT.*pending_urls\.json/);
+}));
+
+test('ignore and pending match trailing slashes in both directions without changing request URLs', () => fixture(async (directory, write) => {
+  const kept = [
+    entry('https://kept.example/path/'),
+    entry('https://path-normal.example/path/child'),
+    entry('https://path-normal.example/path?different=1'),
+    entry('https://query-value.example/path?next=/'),
+  ];
+  for (const filename of ['ignore_urls.json', 'pending_urls.json']) {
+    for (const exclusionHasSlash of [false, true]) {
+      const collectedSlash = exclusionHasSlash ? '' : '/';
+      const excludedSlash = exclusionHasSlash ? '/' : '';
+      await write('data.json', { urls: [
+        entry('https://root-normal.example' + collectedSlash),
+        entry('https://path-normal.example/path' + collectedSlash),
+        entry('https://query.example/path' + collectedSlash + '?mode=1#collected'),
+        ...kept,
+      ] });
+      await write('additional_data.json', { urls: [
+        entry('https://root-additional.example' + collectedSlash),
+        entry('https://path-additional.example/path' + collectedSlash),
+      ] });
+      await write('ignore_urls.json', { data: [] });
+      await write('pending_urls.json', { data: [] });
+      await write(filename, { data: [
+        'https://root-normal.example' + excludedSlash,
+        'https://path-normal.example/path' + excludedSlash,
+        'https://query.example/path' + excludedSlash + '?mode=1#excluded',
+        'https://root-additional.example' + excludedSlash,
+        'https://path-additional.example/path' + excludedSlash,
+        'https://query-value.example/path?next=',
+      ] });
+      assert.deepEqual(await loadUrls(directory), kept.map(item => ({ ...item, type: 'normal' })));
+    }
+  }
+}));
+
+test('pending projects are not probed and removing an entry restores monitoring', () => fixture(async (directory, write) => {
+  const calls = [];
+  await write('pending_urls.json', { data: ['https://one.example/'] });
+  const pendingFile = path.join(directory, 'pending_urls.json');
+  const pendingContents = await fs.readFile(pendingFile, 'utf8');
+  const monitor = createHealthMonitor({
+    directory, delayMs: 0,
+    probe: async host => { calls.push(host); return { statusCode: 200, finalUrl: host }; },
+  });
+  await monitor.run();
+  assert.deepEqual(calls, ['https://two.example/']);
+  assert.equal((await monitor.getStatus()).total, 1);
+  assert.equal(await fs.readFile(pendingFile, 'utf8'), pendingContents);
+  await write('pending_urls.json', { data: [] });
+  const restored = await monitor.getStatus();
+  assert.equal(restored.total, 2);
+  assert.equal(restored.pendingCount, 1);
+  await monitor.run();
+  assert.deepEqual(calls, ['https://two.example/', 'https://one.example/', 'https://two.example/']);
+  assert.equal((await monitor.getStatus()).healthyCount, 2);
 }));
 
 test('retry once, delay every subsequent request, persist results and expose errors', () => fixture(async directory => {

@@ -14,6 +14,701 @@
 			"name": "IGEmailScraper",
 			"host": "https://igemailextractor.com",
 			"category": "2022"
+		},
+		{
+			"name": "Followers Tracker for Ins",
+			"host": "https://igfollowerstracker.extensionsbox.com",
+			"category": "2022"
+		},
+		{
+			"name": "QRCodeGeneratorForGmail",
+			"host": "https://qrcodegeneratorforgmail.extensionsbox.com",
+			"category": "2022"
+		},
+		{
+			"name": "QuickTableForGmail",
+			"host": "https://quicktableforgmail.extensionsbox.com",
+			"category": "2022"
+		},
+		{
+			"name": "Shopify2woo",
+			"host": "https://shopify2woo.extensionsbox.com",
+			"category": "2022"
+		},
+		{
+			"name": "Shopy",
+			"host": "https://shopy.extensionsbox.com",
+			"category": "2022"
+		},
+		{
+			"name": "TKCommentExport",
+			"host": "https://tkcommentexport.extensionsbox.com",
+			"category": "2022"
+		},
+		{
+			"name": "YellowPagesScraper",
+			"host": "https://yellowpagesscraper.extensionsbox.com",
+			"category": "2022"
+		},
+		{
+			"name": "AliExpressReviewsExtractor",
+			"host": "https://aliexpressreviewsextractor.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "AmazonImagesDownloader",
+			"host": "https://amazonimagesdownloader.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "AmazonReviewsExtractor",
+			"host": "https://amazonreviewsextractor.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "Booking Reviews Extractor",
+			"host": "https://bookingreviewsextractor.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "Booking Scraper",
+			"host": "https://bookingscraper.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "eBay Images Downloader",
+			"host": "https://ebayimagesdownloader.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "EbayReviewsExtractor",
+			"host": "https://ebayreviewsextractor.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "EtsyImagesDownloader",
+			"host": "https://etsyimagesdownloader.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "EtsyReviewsExtractor",
+			"host": "https://etsyreviewsextractor.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "Group Extractor",
+			"host": "https://fbgroupextractor.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "Followers Exporter for Thread",
+			"host": "https://followersexporterforthreads.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "Glassdoor Scraper",
+			"host": "https://glassdoorscraper.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "Google Jobs Scraper",
+			"host": "https://googlejobsscraper.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "Indeed Scraper",
+			"host": "https://indeedscraper.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "JobAssistant",
+			"host": "https://jobassistant.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "JustdialScraper",
+			"host": "https://justdialscraper.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "Leads Finder for Bing Maps",
+			"host": "https://leadsfinder.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "Jobs Scraper for LinkedIn",
+			"host": "https://linkedinjobsscraper.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "SheinImagesDownloader",
+			"host": "https://sheinimagesdownloader.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "SheinReviewsExtractor",
+			"host": "https://sheinreviewsextractor.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "Shein Scraper",
+			"host": "https://sheinscraper.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "SlackMemberExtractor",
+			"host": "https://slackmemberextractor.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "TemuImagesDownloader",
+			"host": "https://imagesdownloaderfortm.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "Reviews Extractor for Temu™",
+			"host": "https://reviewsextractorfortm.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "Review Scraper for TripAdvisor®",
+			"host": "https://tripadvisorreviewscraper.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "WalmartImagesDownloader",
+			"host": "https://imagesdownloaderforwm.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "WalmartReviewsExtractor",
+			"host": "https://reviewsextractorforwm.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "WayfairImagesDownloader",
+			"host": "https://wayfairimagesdownloader.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "WayfairReviewsExtractor",
+			"host": "https://wayfairreviewsextractor.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "XExporter - Export Twitter Followers",
+			"host": "https://xexporter.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "Yelp Scraper",
+			"host": "https://yelpscraper.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "ZillowScraper",
+			"host": "https://zillowscraper.extensionsbox.com",
+			"category": "2023"
+		},
+		{
+			"name": "AI Job Match",
+			"host": "https://aijobmatch.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Airbnb Images Downloader",
+			"host": "https://airbnbimagesdownloader.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Airbnb Reviews Extractor",
+			"host": "https://airbnbreviewsextractor.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Airbnb Scraper",
+			"host": "https://airbnbscraper.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "AI Reviews Summary for Google Maps",
+			"host": "https://aireviewssummaryforgooglemaps.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "AI Review Summarizer",
+			"host": "https://aireviewsummarizer.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "AliExpress Images Downloader",
+			"host": "https://aliexpressimagesdownloader.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Booking Images Downloader",
+			"host": "https://bookingimagesdownloader.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Bulk Barcode Generator",
+			"host": "https://bulkbarcodegenerator.net",
+			"category": "2024"
+		},
+		{
+			"name": "Capterra Reviews Extractor",
+			"host": "https://capterrareviewsextractor.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Costco Images Downloader",
+			"host": "https://costcoimagesdownloader.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Costco Reviews Extractor",
+			"host": "https://costcoreviewsextractor.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Comments Exporter for fb",
+			"host": "https://fbcommentsexporter.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Photos Downloader",
+			"host": "https://photosdownloader.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Post Scraper",
+			"host": "https://postscraper.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "G2 Reviews Extractor",
+			"host": "https://g2reviewsextractor.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Comments Exporter for Ins",
+			"host": "https://igcommentsexporter.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Followers Exporter for Ins",
+			"host": "https://igfollowersexporter.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Images & Videos Downloader for Ins",
+			"host": "https://imagesdownloaderforins.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Likes Exporter for Ins",
+			"host": "https://iglikesexporter.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Indeed Reviews Extractor",
+			"host": "https://indeedreviewsextractor.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Lazada Images Downloader",
+			"host": "https://lazadaimagesdownloader.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Lazada Reviews Extractor",
+			"host": "https://lazadareviewsextractor.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Profile Scraper for LinkedIn™",
+			"host": "https://linkedinprofilescraper.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Pinterest Images & Videos Downloader",
+			"host": "https://pinterestimagesdownloader.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Shein to Shopify",
+			"host": "https://shein2shopify.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Shein to WooCommerce",
+			"host": "https://shein2woo.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Shopee Images Downloader",
+			"host": "https://shopeeimagesdownloader.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Shopee Reviews Extractor",
+			"host": "https://shopeereviewsextractor.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Target Images Downloader",
+			"host": "https://targetimagesdownloader.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Target Reviews Extractor",
+			"host": "https://targetreviewsextractor.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Tripadvisor Scraper",
+			"host": "https://tripadvisorscraper.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Trustpilot Reviews Extractor",
+			"host": "https://trustpilotreviewsextractor.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Twitch Chat Downloader",
+			"host": "https://twitchchatdownloader.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Bulk Message Sender for wa",
+			"host": "https://wabulkmessagesender.net",
+			"category": "2024"
+		},
+		{
+			"name": "Chats Backup for wa",
+			"host": "https://wachatsbackup.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Contacts Extractor for wa",
+			"host": "https://wacontactsextractor.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "X Jobs Scraper",
+			"host": "https://xjobsscraper.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "X Media Downloader",
+			"host": "https://xmediadownloader.com",
+			"category": "2024"
+		},
+		{
+			"name": "Yelp Reviews Extractor",
+			"host": "https://yelpreviewsextractor.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "Chat Recorder for YouTube",
+			"host": "https://youtubechatdownloader.extensionsbox.com",
+			"category": "2024"
+		},
+		{
+			"name": "AI Excel Translator",
+			"host": "https://aiexceltranslator.com",
+			"category": "2025"
+		},
+		{
+			"name": "AI Prompt Library",
+			"host": "https://aivideoprompts.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "Amazon Offers Scraper",
+			"host": "https://amazonoffersscraper.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "Amazon Search Scraper",
+			"host": "https://amazonsearchscraper.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "ArtGenify",
+			"host": "https://artgenify.com",
+			"category": "2025"
+		},
+		{
+			"name": "Bulk Barcode Generator",
+			"host": "https://bulkbarcodegenerator.net",
+			"category": "2025"
+		},
+		{
+			"name": "ChatGPT Images Downloader",
+			"host": "https://gptlibrarydownloader.com",
+			"category": "2025"
+		},
+		{
+			"name": "ChatGPT Images Exporter",
+			"host": "https://gptlibraryexporter.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "ChatGPT Exporter",
+			"host": "https://gptpdfexporter.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "Clutch Scraper",
+			"host": "https://clutchscraper.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "Delete Twitter Posts",
+			"host": "https://deletetwitterposts.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "DeviantArt Images Downloader",
+			"host": "https://deviantartimagesdownloader.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "Discord Chat Exporter",
+			"host": "https://discordchatexporter.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "Email Collector",
+			"host": "https://emailcollector.net",
+			"category": "2025"
+		},
+		{
+			"name": "FB Messenger Translator",
+			"host": "https://fbmessengertranslator.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "Indeed Job Scraper",
+			"host": "https://jobscraper.net",
+			"category": "2025"
+		},
+		{
+			"name": "Reviews Extractor for Trustpilot",
+			"host": "https://reviewsextractorfortrustpilot.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "Right Translator",
+			"host": "https://righttranslator.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "Sora Comments Exporter",
+			"host": "https://soracommentsexporter.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "Sora Exporter",
+			"host": "https://soraexporter.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "Sora Followers Exporter",
+			"host": "https://sorafollowersexporter.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "Sora Video Downloader",
+			"host": "https://soravideodownloader.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "TG Media Downloader",
+			"host": "https://tgmediadownloader.com",
+			"category": "2025"
+		},
+		{
+			"name": "TG Members Extractor",
+			"host": "https://tgmembersextractor.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "TG Video Downloader",
+			"host": "https://tgvideodownloader.net",
+			"category": "2025"
+		},
+		{
+			"name": "Threads Media Downloader",
+			"host": "https://threadsmediadownloader.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "TK Followers Exporter",
+			"host": "https://tkfollowersexporter.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "TikTok Video Downloader",
+			"host": "https://tkvideodownloader.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "Twitter Media Downloader",
+			"host": "https://twittermediadownloader.net",
+			"category": "2025"
+		},
+		{
+			"name": "Twitter Video Downloader",
+			"host": "https://twittervideosaver.com",
+			"category": "2025"
+		},
+		{
+			"name": "WA Translator",
+			"host": "https://watranslator.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "X Bookmarks Exporter",
+			"host": "https://xbookmarksexporter.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "X Comments Exporter",
+			"host": "https://xcommentsexporter.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "X Group Scraper",
+			"host": "https://xgroupscraper.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "X Image Downloader",
+			"host": "https://ximagedownloader.com",
+			"category": "2025"
+		},
+		{
+			"name": "X Post Exporter",
+			"host": "https://xpostexporter.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "X Search Scraper",
+			"host": "https://xsearchscraper.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "X Video Downloader",
+			"host": "https://xvideodownloader.online",
+			"category": "2025"
+		},
+		{
+			"name": "Yahoo Auctions Scraper",
+			"host": "https://yahooauctionsscraper.extensionsbox.com",
+			"category": "2025"
+		},
+		{
+			"name": "Amazon Video Downloader",
+			"host": "https://amazonvideodownloader.extensionsbox.com",
+			"category": "2026"
+		},
+		{
+			"name": "Bluesky Followers Exporter",
+			"host": "https://blueskyfollowersexporter.extensionsbox.com",
+			"category": "2026"
+		},
+		{
+			"name": "Bluesky Media Downloader",
+			"host": "https://blueskymediadownloader.extensionsbox.com",
+			"category": "2026"
+		},
+		{
+			"name": "Bluesky Post Scraper",
+			"host": "https://blueskypostscraper.extensionsbox.com",
+			"category": "2026"
+		},
+		{
+			"name": "Bulk Number Checker for wa",
+			"host": "https://bulkwanumberchecker.extensionsbox.com",
+			"category": "2026"
+		},
+		{
+			"name": "Auto Flow for ChatGPT",
+			"host": "https://gptautoflow.extensionsbox.com",
+			"category": "2026"
+		},
+		{
+			"name": "Auto Flow for Gemini",
+			"host": "https://autoflowforgemini.extensionsbox.com",
+			"category": "2026"
+		},
+		{
+			"name": "Image To Prompt",
+			"host": "https://imagetoprompt.extensionsbox.com",
+			"category": "2026"
+		},
+		{
+			"name": "Jobs Scraper for LinkedIn",
+			"host": "https://jobsscraperforlinkedin.extensionsbox.com",
+			"category": "2026"
+		},
+		{
+			"name": "Profile Scraper for LinkedIn",
+			"host": "https://profilescraperforlinkedin.extensionsbox.com",
+			"category": "2026"
+		},
+		{
+			"name": "Substack Comments Exporter",
+			"host": "https://substackcommentsexporter.extensionsbox.com",
+			"category": "2026"
+		},
+		{
+			"name": "Substack Media Downloader",
+			"host": "https://substackmediadownloader.extensionsbox.com",
+			"category": "2026"
+		},
+		{
+			"name": "Substack Post Scraper",
+			"host": "https://substackpostscraper.extensionsbox.com",
+			"category": "2026"
+		},
+		{
+			"name": "Substack to PDF",
+			"host": "https://substacktopdf.extensionsbox.com",
+			"category": "2026"
+		},
+		{
+			"name": "Video to Prompt for Short",
+			"host": "https://videotopromptforshort.extensionsbox.com",
+			"category": "2026"
+		},
+		{
+			"name": "Number Checker for wa",
+			"host": "https://wanumberchecker.extensionsbox.com",
+			"category": "2026"
+		},
+		{
+			"name": "X Followers Tracker",
+			"host": "https://xfollowerstracker.extensionsbox.com",
+			"category": "2026"
+		},
+		{
+			"name": "X History Exporter",
+			"host": "https://xhistoryexporter.extensionsbox.com",
+			"category": "2026"
+		},
+		{
+			"name": "YouTube Comments Exporter",
+			"host": "https://youtubecommentsexporter.extensionsbox.com",
+			"category": "2026"
+		},
+		{
+			"name": "Zillow Images Downloader",
+			"host": "https://zillowimagesdownloader.extensionsbox.com",
+			"category": "2026"
 		}
 	]
 }

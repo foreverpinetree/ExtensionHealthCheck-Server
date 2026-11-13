@@ -1,0 +1,9 @@
+{
+    "version": "1.0.0",
+    "showUpdateNotice": false,
+    "updateUrl": "https://extensionhealthcheck.extensionsbox.com/install",
+    "visible": {
+        "chrome": true,
+        "edge": true
+    }
+}

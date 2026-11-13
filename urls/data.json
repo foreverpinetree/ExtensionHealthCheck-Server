@@ -1,0 +1,19 @@
+{
+	"urls": [
+		{
+			"name": "Bulk QR Code Generator",
+			"host": "https://bulkqrcodegenerator.com",
+			"category": "2022"
+		},
+		{
+			"name": "GRLink",
+			"host": "https://grlink.extensionsbox.com",
+			"category": "2022"
+		},
+		{
+			"name": "IGEmailScraper",
+			"host": "https://igemailextractor.com",
+			"category": "2022"
+		}
+	]
+}

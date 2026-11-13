@@ -1,0 +1,25 @@
+{
+  "paddle": "admin@extensionsbox.com",
+  "vendor": 138140,
+  "upsell": {
+    "text": "LIMITED TIME OFFER!",
+    "only_show_text": true,
+    "time": 9999999999999
+  },
+  "subscriptions": [{
+      "name": "monthly",
+      "upsell_price": "$9.99",
+      "price": "$12.99"
+    },
+    {
+      "name": "quarterly",
+      "upsell_price": "$25.99",
+      "price": "$29.99" 
+    },
+    {
+      "name": "yearly",
+      "upsell_price": "$89.99",
+      "price": "$129.99"
+    }
+  ]
+}

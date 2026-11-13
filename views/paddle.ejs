@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe - SlackMemberExtractor</title>
+    <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+    <script type="text/javascript">
+        Paddle.Setup({ vendor: <% - vendor %> });
+    </script>
+</head>
+
+<body>
+    <script>
+        Paddle.Checkout.open({
+            product: <% - prodcut %>,
+            passthrough: '<%- params %>',
+            closeCallback: function () {
+                window.location.href = '/'
+            }
+        });
+    </script>
+</body>
+
+</html>

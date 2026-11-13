@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test:health": "node test/health-monitor.test.js",
+    "start": "node ./bin/www",
+    "dev": "set PORT=9001 && set NODE_ENV=localhost && nodemon --ext js,json,html,ejs ./bin/www",
+    "dev:pro": "set PORT=9001 && set NODE_ENV=localhost && set PRO=1 && nodemon --ext js,json,html,ejs ./bin/www"
+  },
+  "dependencies": {
+    "@parse/s3-files-adapter": "^2.2.0",
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "ejs": "~2.5.6",
+    "express": "~4.15.2",
+    "morgan": "~1.8.1",
+    "parse-server": "^5.5.2",
+    "parse-server-mailgun": "^2.4.15",
+    "serve-favicon": "~2.4.2",
+    "stripe": "^8.129.0"
+  }
+}

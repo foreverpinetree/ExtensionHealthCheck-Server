@@ -1,0 +1,46 @@
+{
+  "databaseURI": "mongodb://localhost:27017/ExtensionHealthCheck-Server",
+  "appId": "TBYXq23BSCfd5WeyC3F9DpoHFzjT7BtFX94qyzkpjHKNn7oK",
+  "masterKey": "4rPjAdcKosnxhnHhl1b6yZBkF3UGbNnNGWdlW19C2gVuiVZD",
+  "serverURL": "http://localhost:9001/parse",
+  "payServerURL": "http://localhost:3920/parse",
+  "cloud": "./cloud/main.js",
+  "production": false,
+  "app": "ExtensionHealthCheck",
+  "verbose": false,
+  "silent": true,
+  "logLevel": "error",
+  "verifyUserEmails": false,
+  "emailAdapter": {
+    "module": "parse-server-mailgun",
+    "options": {
+      "fromAddress": "Youtube Playlist Export <noreply@yourapp.com>",
+      "domain": "support.getwebooster.com",
+      "apiKey": "key-98aqnzzy4w9b9jdtak2wzgkec7soo3r5",
+      "templates": {
+        "customEmailAlert": {
+          "subject": "Urgent notification!",
+          "pathPlainText": "./email-templates/custom_email.txt",
+          "pathHtml": "./email-templates/custom_email.html"
+        }
+      }
+    }
+  },
+  "filesAdapter": {
+    "module": "@parse/s3-files-adapter",
+    "options": {
+      "bucket": "gsnippets",
+      "region": "us-west-1",
+      "bucketPrefix": "",
+      "directAccess": true,
+      "fileAcl": null,
+      "baseUrl": null,
+      "baseUrlDirect": false,
+      "signatureVersion": "v4",
+      "globalCacheControl": null,
+      "ServerSideEncryption": "AES256",
+      "validateFilename": null,
+      "generateKey": null
+    }
+  }
+}

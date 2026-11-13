@@ -1,0 +1,8 @@
+Hi there,
+
+Thanks for giving {{appName}} Pro a try. We're here to confirm that your {{appName}} Pro subscription has been cancelled.
+
+You can continue to access your Pro feature until your subscription ends on 10/03//2020.
+
+WeBooster Team
+https://getwebooster.com
